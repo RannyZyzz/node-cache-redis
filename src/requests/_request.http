@@ -1,0 +1,12 @@
+### Teste de rota
+GET http://localhost:3000/ HTTP/1.1
+
+### Criar usuário
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "RannyZyz",
+    "password": "affz",
+    "name":"Rannier Reis"
+}
