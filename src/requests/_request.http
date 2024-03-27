@@ -1,6 +1,7 @@
 ### Teste de rota
 GET http://localhost:3000/ HTTP/1.1
 
+
 ### Criar usuário
 POST http://localhost:3000/users HTTP/1.1
 content-type: application/json
@@ -10,3 +11,19 @@ content-type: application/json
     "password": "affz",
     "name":"Rannier Reis"
 }
+
+
+### Login 
+POST http://localhost:3000/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "RannyZyz",
+    "password": "affz"
+}
+
+
+### Login 
+GET http://localhost:3000/users/profile HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTE1MDI2MDYsInN1YiI6ImNsdTBrZ2VmajAwMDB3MTNlbDFwZzVldmMifQ.pzlD76TFaxmegfnKeTXXukEACCXy0Vg7SoNdNFqiOjY
