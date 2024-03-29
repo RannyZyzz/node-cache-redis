@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  node-cache-redis:
+    build:
+      context: "./"
+      dockerfile: Dockerfile
+    container_name: node-cache-redis
+    restart: always
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '0.50'
+    #       memory: 50M
+    #     reservations:
+    #       cpus: '0.25'
+    #       memory: 20M
