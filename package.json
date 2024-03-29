@@ -15,12 +15,14 @@
     "cuid": "3.0.0",
     "dotenv": "16.4.5",
     "express": "4.19.1",
+    "ioredis": "^5.3.2",
     "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "@types/bcrypt": "5.0.2",
     "@types/cuid": "2.0.1",
     "@types/express": "4.17.21",
+    "@types/ioredis": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "20.11.30",
     "prisma": "5.11.0",
