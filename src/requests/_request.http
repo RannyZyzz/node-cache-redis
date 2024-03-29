@@ -7,8 +7,8 @@ POST http://localhost:3000/users HTTP/1.1
 content-type: application/json
 
 {
-    "username": "RannyZyz",
-    "password": "affz",
+    "username": "RannyZyzz",
+    "password": "affzz",
     "name":"Rannier Reis"
 }
 
@@ -18,12 +18,12 @@ POST http://localhost:3000/login HTTP/1.1
 content-type: application/json
 
 {
-    "username": "RannyZyz",
-    "password": "affz"
+    "username": "RannyZyzz",
+    "password": "affzz"
 }
 
 
 ### Login 
 GET http://localhost:3000/users/profile HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTE1MDI2MDYsInN1YiI6ImNsdTBrZ2VmajAwMDB3MTNlbDFwZzVldmMifQ.pzlD76TFaxmegfnKeTXXukEACCXy0Vg7SoNdNFqiOjY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTE3NTEwMTMsInN1YiI6ImNsdWQ4Y2R3MTAwMDA1cnM1NTlsaHF0cHMifQ.EA5OpewQ2MJX2goC7HvJrDjQBJ_EGqQxNEq-NsH6jps
