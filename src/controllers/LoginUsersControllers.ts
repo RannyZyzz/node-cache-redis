@@ -4,6 +4,7 @@ import { compare } from "bcrypt";
 import { Request, Response } from "express";
 import { sign } from "jsonwebtoken";
 import { PrismaClient } from "@prisma/client";
+import { setRedis } from '../redisConfig';
 
 const prisma = new PrismaClient()
 
@@ -39,6 +40,9 @@ export class LoginUserController {
         const token = sign({}, process.env.JWT_SECRET, {
             subject: user.id,
         })
+
+        //definir como user-${user.id} o dado que precisaremos recuperar
+        await setRedis(`user-${user.id}`, JSON.stringify(user))
 
         return response.json(token)
     }
