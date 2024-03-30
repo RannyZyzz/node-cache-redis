@@ -58,14 +58,15 @@ npm install
 3. Inicie o servidor:
 
 ```
-npm start
+npm run dev
 ```
 
 4. Acesse a API:
 
 ```
-curl http://localhost:3000/api/
+curl http://localhost:3000
 ```
+O app pussui uma pasta /requests com todos os métodos desenvolvidos
 
 ### Observações
 
